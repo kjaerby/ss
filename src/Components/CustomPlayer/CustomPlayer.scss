@@ -1,0 +1,33 @@
+.modal_root_custom {
+  background-color: var(--background_main);
+  left: 8%;
+  right: 8%;
+  position: absolute;
+  top: 6%;
+  bottom: 6%;
+  max-height: 90vh;
+  min-height: 60vh;
+}
+
+#player {
+  backdrop-filter: blur(10px);
+}
+
+#customPlayer {
+  .MuiBackdrop-root {
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (max-width: 600px){
+  #customPlayer{
+    height: 50%;
+    top: 25%;
+    .modal_root_custom{
+      min-height: 40vh;
+      max-height: 40vh;
+      left: 0%;
+      right: 0%;
+    }
+  }
+}
